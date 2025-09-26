@@ -375,8 +375,8 @@ ul {
 ===================== */
 
 .projects {
-    padding: 64px 0;
     background-color: #f8f9fa;
+    margin-top: 40px;
 }
 
 .projects__container {
@@ -387,6 +387,7 @@ ul {
 .projects__title {
     text-align: center;
     margin-bottom: 16px;
+    margin-top: 10px;
 }
 
 .projects__description {
@@ -397,6 +398,23 @@ ul {
     margin-left: auto;
     margin-right: auto;
 }
+
+.projects__learnings {
+    text-align: center;
+    color: #666666;
+    margin-bottom: 48px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.projects__technologies {
+    text-align: center;
+    position: relative;
+    margin-bottom: 32px;
+}
+
+
 
 .projects__grid {
     padding: 0 20px;
@@ -411,6 +429,10 @@ ul {
     padding: 32px;
     margin-bottom: 32px;
     border: 1px solid #2563eb;
+}
+
+article.project__blog {
+    text-align: center;
 }
 
 .project:hover {
@@ -436,11 +458,16 @@ ul {
 .project__title {
     color: #1a1a1a;
     margin-bottom: 16px;
+    text-align: center;
 }
 
 .project__description {
+    text-align: center;
     color: #666666;
-    margin-bottom: 24px;
+    margin-bottom: 48px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .project__subtitle {
@@ -448,12 +475,16 @@ ul {
     color: #333333;
     margin-top: 24px;
     margin-bottom: 12px;
+    text-align: center;
 }
 
 .project__learnings {
-    list-style: disc;
+    list-style: none;
     padding-left: 24px;
     margin-bottom: 24px;
+
+    margin-bottom: 38px;
+    text-align: center;
 }
 
 .project__learnings li {
@@ -462,7 +493,9 @@ ul {
 }
 
 .project__technologies {
-    margin-bottom: 24px;
+    text-align: center;
+    position: relative;
+    margin-bottom: 32px;
 }
 
 .tag {
@@ -476,12 +509,200 @@ ul {
 }
 
 .project__links {
-    text-align: left;
+    text-align: center;
+    margin-bottom: 32px;
+    text-decoration: none;
+    font-size: 14px;
+    
 }
 
 .project__link {
     display: inline-block;
     margin-right: 16px;
     font-weight: 600;
+    color: #666666;
 }
 
+/* ====================
+15. Skill selection
+===================== */
+
+.skills {
+    padding: 64px 0;
+}
+
+.skills__container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.skills__title {
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.skills__subtitle {
+    text-align: center;
+    color: #666666;
+    margin-bottom: 32px;
+}
+
+.skills__list {
+    margin-bottom: 48px;
+}
+
+.skill {
+    margin-bottom: 32px;
+}
+
+.skill__name {
+    margin-bottom: 8px;
+    color: #1a1a1a;
+}
+
+.skill__bar {
+    background-color: #e0e0e0;
+    height: 24px;
+    position: relative;
+    margin-bottom: 8px;
+}
+
+.skill__progress {
+    background-color: #2563eb;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.skill__progress--html {
+    width: 75%;
+}
+
+.skill__progress--css {
+    width: 60%;
+}
+
+.skill__progress--js {
+    width: 20%;
+}
+
+.skill__percentage {
+    color: #666666;
+    font-size: 14px;
+}
+
+/* ====================
+16. Learning
+===================== */
+
+.learning {
+    background-color: #f8f9fa;
+    padding: 24px;
+}
+
+.learning__title {
+    margin-bottom: 16px;
+    color: #1a1a1a;
+    text-align: center;
+}
+
+.learning__list {
+    padding-left: 24px;
+    text-align: center;
+}
+
+.learning__item {
+    color: #666666;
+    margin-bottom: 8px;
+}
+
+/* ====================
+17. Contact section
+===================== */
+
+.contact {
+    padding: 64px 0;
+    background-color: #f0f4f8;
+}
+
+.contact__container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact__title {
+    margin-bottom: 16px;
+}
+
+.contact__description {
+    color: #666666;
+    margin-bottom: 48px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact__methods {
+    margin-bottom: 48px;
+}
+
+.contact__method {
+    display: inline-block;
+    margin: 0 32px 32px;
+    text-align: center;
+}
+
+.contact__method--title {
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: #1a1a1a;
+}
+
+.contact__link {
+    color: #2563eb;
+    font-weight: 600;
+}
+
+/* ====================
+18. Footer
+===================== */
+
+.footer {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    padding: 48px 0;
+    text-align: center;
+}
+
+.footer__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer__nav {
+    margin-bottom: 24px;
+}
+
+.footer__link {
+    color: #ffffff;
+    margin: 0 16px;
+    display: inline-block;
+}
+
+.footer__link:hover {
+    color: #93c5fd;
+    text-decoration: none;
+}
+
+.footer__copyright {
+    color: #9ca3af;
+    margin-bottom: 8px;
+}
+
+.footer__credits {
+    color: #9ca3af;
+    font-size: 14px;
+}
