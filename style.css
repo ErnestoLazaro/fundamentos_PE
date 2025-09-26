@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    color: blueviolet;
+}
+h2 {
+    color: aquamarine;
+}
+p {
+    color:blue ;
+    margin-bottom: 30px;
+
+}
