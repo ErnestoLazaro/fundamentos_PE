@@ -3,21 +3,320 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>clase 1 introduccion a CSS</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Ernesto Lázaro Guerrero - Portfolio Personal</title>
+    <meta name="description"
+    content=" Portfolio personal de Ernesto Lazaro. Desarrollador Web en formación aprendiendo HTML y CSS.">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Mi primer titulo</h1>
-    <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, veniam excepturi! Iure accusantium beatae optio, corrupti sunt provident saepe quaerat ducimus sequi enim? Modi, quisquam asperiores. Aut ducimus ea autem.
-    </p>
+    <!-- Header con navagación -->
+     <header class="header">
+        <div class="header__container">
+            <div class="header__brand">
+                <h1 class="header__name">Ernesto Lázaro Guerrero</h1>
+                <p class="header__tagline">Desarrollador Wen en formación</p>
+            </div>
 
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita consequuntur temporibus iusto, magni at, illo recusandae, sunt vero quo incidunt non laborum perspiciatis placeat magnam quod totam maxime odio eos.
-    </p>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#inicio" class="nav__link--active">Inicio</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#sobre-mi" class="nav__link">Sobre mí</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#proyectos" class="nav__link">Proyectos</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#habilidades" class="nav__link">Habilidades</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contacto" class="nav__link">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+     </header>
 
-    <h2>Subtitulo</h2>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia error numquam accusamus neque temporibus repellendus quam aperiam deserunt magnam praesentium obcaecati ullam, illum sapiente tempore optio! Expedita et facilis a.</p>
+     <!-- Contenido principal-->
+      <main class="main">
+        <!-- Hero Section-->
+         <section class="hero" id="inicio">
+            <div class="hero__container">
+                <h2 class="hero__title">Hola!, Soy Ernesto Lázaro</h2>
+                <p class="hero__subtitle"> Desarrollador en formación</p>
+                <p class="hero__description">
+                    Estoy aprendiendo HTML y CSS para crear sitios web hermosos y funcionales. Mi pasión tranformar ideas en experiencias web increíbles
+                </p>
 
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati illo rerum voluptatem magni voluptatibus animi natus eius blanditiis eos neque, ducimus quae enim nostrum numquam dignissimos et laboriosam ipsam veritatis?</p>
+                <div class="hero__actions">
+                    <a href="#proyectos" class="button button--primary">Ver mis proyectos</a>
+                    <a href="#contacto" class="button button--secondary">Contáctame</a>
+                </div>
+
+                <div class="hero__stats">
+                    <div class="stat">
+                        <span class="stat__number">6+</span>>
+                        <span class="stat__label">Meses aprendiendo</span>
+                    </div>
+
+                    <div class="stat">
+                        <span class="stat__number">3+</span>>
+                        <span class="stat__label">Proyectos completados</span>
+                    </div>
+
+                    <div class="stat">
+                        <span class="stat__number">5+</span>
+                        <span class="stat__label">Tecnologías</span>
+                    </div>
+                </div>
+            </div>
+         </section>
+
+         <!-- Sobre mí-->
+          <section class="about" id="sobre-mi">
+            <div class="about__container">
+                <h2 class="about__title">MI viaje en el desarrollo web</h2>
+
+                <p class="about__intro">
+                    Soy <strong>desarrollador web en formación</strong>, actualmente aprendiendo HTML y CSS para crear sitios webs hermosos y funcionales 
+                </p>
+
+                <p class="about__text">
+                    Me apasiona la tecnología y el diseño. Cada día descubro nuevas formas de mejorar mis habilidades y crear mejores experiencias Web
+                </p>
+
+                <blockquote class="quote">
+                    <p class="quote__text">
+                        "El buen diseño es obvio. El gran diseño es transparente. Mi objetivo es crear sitios web que sean ambos: bellos y funcionales"
+                    </p>
+
+                    <cite class="quote__author">-Mi filosofía de aprendizzaje</cite>
+                </blockquote>
+
+                <div class="values">
+                    <h3 class="values__title">Mis valores</h3>
+                    <ul class="values__list">
+                        <li class="values__item">
+                            <span class="values__icon">⚙️</span>
+                            <strong>Dedicación</strong>
+                            <span>Comprometido con mi aprendizaje diario</span>
+                        </li>
+                        <li class="values__item">
+                            <span class="values__icon">📚</span>
+                            <strong>Curiosidad</strong>
+                            <span>Siempre explorando nuevas tecnologías</span>
+                        </li>
+                        <li class="values__item">
+                            <span class="values__icon">🪄</span>
+                            <strong>Creatividad</strong>
+                            <span>Buscando soluciones innovadoras</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+          </section>
+
+          <!-- Proyectos-->
+           <section class="projects" id="proyectos">
+            <div class="projects__container">
+                <h2 class="projects__title">Mis proyectos de práticas</h2>
+                <p class="projects__description">
+                    Cada proyecto representa mi progreso aprendiendo desarrollo web. Desde páginas simples hasta este portfolio completo
+                </p>
+
+                <div class="projects__grid">
+                    <article class="proyect">
+                        <h3 class="projects__title">Mi primer sitio Web</h3>
+                        <p class="projects__description">
+                            Mi primer proyecto completo usando HTML y CSS. Una pagina simple pero bien estructurada donde apliqué los conceptos básicos aprendidos
+                        </p>
+
+                        <h4 class="projects__title">Lo que aprendí:</h4>
+                        <ul class="projects__learnings">
+                            <li>Estructura semántica de HTML</li>
+                            <li>Box model y layout básico</li>
+                            <li>Estilos CSS fundamentales </li>
+                            <li>Principios básicos de accesibilidad</li>
+                            <li>Introducción al diseño responsivo</li>
+                        </ul>
+
+                        <div class="projects__technologies">
+                            <span class="tag">HTML 5</span>
+                            <span class="tag">CSS 3</span>
+                        </div>
+
+                        <div class="project__links">
+                            <a href="#" class="project__link">Ver proyecto</a>
+                            <a href="#" class="project__link">Ver código</a>
+                        </div>
+                    </article>
+
+                    <article class="project project__featured">
+                        <span class="project__badge">Destacado</span>
+                        <h3 class="project__title">Portfolio Personal</h3>
+                        <p class="project__description">
+                            Este mismo portfolio que estas viendo. Mi proyecto más completo donde aplico todo lo aprendido en HTML y CSS
+                        </p>
+
+                        <h4 class="project__subtitle">Características</h4>
+                        <ul class="project__learnings">
+                            <li>HTML semántico y accesible</li>
+                            <li>CSS moderno y organizado</li>
+                            <li>Diseño responsivo</li>
+                            <li>Metodología BEM</li>
+                            <li>Optimización de rendimiento</li>
+                        </ul>
+
+                        <div class="project__tecnologies">
+                            <span class="tag">HTML5</span>
+                            <span class="tag">CSS3</span>
+                            <span class="tag">BEM</span>
+                        </div>
+
+                        <div class="project__links">
+                        <a href="#" class="project__link">Ver proyecto</a>
+                        <a href="#" class="project__link">Ver código</a>
+                        </div>
+
+                    </article>
+
+                    <article class="proyect">
+                        <h3 class="project__title">Página de blog</h3>
+                        <p class="project__description">
+                            Un blog simple donde prático la tipografía web y la organización de contenido. Enfocado en la legibilidad y la experiencia de lectura.
+                        </p>
+
+                        <h4 class="project__subtitle">Enfoque:</h4>
+                        <ul class="project__learnings">
+                            <li>Tipografía legible</li>
+                            <li>Espaciado correcto</li>
+                            <li>Jerarquía visual</li>
+                            <li>Colores accesibles</li>
+                            <li>Layout de contenido</li>
+                        </ul>
+
+                        <div class="project__tecnologies">
+                            <span class="tag">HTML5</span>
+                            <span class="tag">CSS3</span>
+                            <spa class="tag">Tipografía</span>
+                        </div>
+
+                        <div class="project__links">
+                            <a href="#" class="project__link">Ver proyecto</a>
+                            <a href="#" class="project__link">Ver código</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+           </section>
+
+           <!-- Habilidades-->
+            <section class="skills" id="habilidades">
+                <div class="skills__container">
+                    <h2 class="skills__title">Mis habilidades</h2>
+
+                    <h3 class="skills__subtitle">Tecnologías que estoy aprendiendo</h3>
+
+                    <div class="skills__list">
+                        <div class="skill">
+                            <h4 class="skill__name">HTML5 y semántica</h4>
+                            <div class="skill__bar">
+                                <div class="skill__progress skill__progress--html"></div>
+                            </div>
+                            <span class="skill__percentage">75%</span>
+                        </div>
+
+                        <div class="skill">
+                            <h4 class="skill__name">CSS3 y diseño</h4>
+                            <div class="skill__bar">
+                                <div class="skill__progress skill__progress--css"></div>
+                            </div>
+                            <span class="skill__percentage">60%</span>
+                        </div>
+
+                        <div class="skill">
+                            <h4 class="skill__name">Javascript (Comenzando)</h4>
+                            <div class="skill__bar">
+                                <div class="skill__progress skill__progress--js"></div>
+                            </div>
+                            <span class="skill__percentage">20%</span>
+                        </div>
+                    </div>
+
+                    <div class="learning">
+                        <h3 class="learning__title">Actualmente aprendiendo</h3>
+                        <ul class="learning__list">
+                            <li class="learning__item">Flexbox y Grid Layout</li>
+                            <li class="learning__item">Animaciones CSS</li>
+                            <li class="learning__item">Diseño responsive</li>
+                            <li class="learning__item">Accesibilidad web</li>
+                            <li class="learning__item">Mejores prácticas</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contacto-->
+             <section class="contact" id="contacto">
+                <div class="contact__container">
+                    <h2 class="contact__title">¿Te gustaría conectar?</h2>
+                    <p class="contact__description">
+                        Siempre estoy buscando aprender de otros desarrolladores, compartir experiencias y tal vez colaborar en proyectos interesantes.
+                    </p>
+
+                    <div class="contact__methods">
+                        <div class="contact__method">
+                            <h3 class="contact__method--title">E-mail</h3>
+                            <a href="mailto:ernestolazaro84@gmail.com" class="contact__link">
+                                ernestolazaro84@gmail.com
+                            </a>
+                        </div>
+
+                        <div class="contact__method">
+                            <h3 class="contact__method--title">Github</h3>
+                            <a href="https://github.com/ErnestoLazaro" class="contact__link">
+                                @ErnestoLazaro
+                            </a>
+                        </div>
+
+                        <div class="contact__method">
+                            <h3 class="contact__method--title">Linkedin</h3>
+                            <a href="https://www.linkedin.com/in/ernesto-lazaro/" class="contact__link">
+                                @ernesto-lazaro
+                            </a>
+                        </div>
+                    </div>
+
+                    <a href="#" class="button button--primary button--large">
+                        Descargar CV
+                    </a>
+
+
+                </div>
+             </section>
+      </main>
+
+      <!-- Footer -->
+       <footer class="footer">
+        <div class="footer__container">
+            <nav class="footer__nav">
+                <a href="#inicio" class="footer__link">Inicio</a>
+                <a href="#sobre-mi" class="footer__link">Sobre mí</a>
+                <a href="#proyectos" class="footer__link">Proyectos</a>
+                <a href="#habilidades" class="footer__link">Habilidades</a>
+                <a href="#contacto" class="footer__link">Contacto</a>
+            </nav>
+
+            <p class="footer__copyright">
+                2025 Ernesto Lázaro - Portfolio Personal 
+            </p>
+
+            <p class="footer__credits">
+                Diseño y desarrollo :3 mientras aprendo HTML y CSS
+            </p>
+        </div>
+       </footer>
 </body>
 </html>
